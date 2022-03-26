@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "sucrase": "^3.15.0",
+    "type": "module"
+  },
+  
+  "scripts": {
+    "dev": "node server.js"
+  }
+}
