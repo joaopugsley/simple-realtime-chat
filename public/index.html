@@ -19,7 +19,7 @@
         </form>
 
         <script type="text/javascript">
-            var socket = io('http://localhost:3000')
+            let socket = io('http://localhost:3000')
 
             function renderMessage(message) {
                 $('.messages').append('<div class="message"><strong>'+ message.author +'</strong>: '+ message.message +'</div>')
@@ -45,8 +45,8 @@
                 chat_maximum_manager()
                 event.preventDefault();
 
-                var author = $('input[name=username]').val();
-                var message = $('input[name=message]').val();
+                let author = $('input[name=username]').val();
+                let message = $('input[name=message]').val();
 
                 if (author.length && message.length) {
                     var messageObject = {
